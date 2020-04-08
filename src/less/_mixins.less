@@ -1,0 +1,15 @@
+// usage, x is the pixel size needed: .font-size(x);
+.font-size(@sizeValue) {
+  @remValue: @sizeValue / 16;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
+
+// usage, x is the pixel size needed: .line-height(x);
+.line-height(@sizeValue) {
+  @remValue: @sizeValue / 16;
+  @pxValue: (@sizeValue);
+  line-height: ~"@{pxValue}px";
+  line-height: ~"@{remValue}rem";
+}

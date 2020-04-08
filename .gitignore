@@ -3,7 +3,8 @@
 # dependencies
 /node_modules/
 # production
-/build
+/build/
+/addon/
 
 # misc
 .DS_Store
