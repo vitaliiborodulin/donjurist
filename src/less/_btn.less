@@ -1,6 +1,13 @@
 .btn {
   display: inline-block;
-  padding: 20px 15px;
+  // padding: 20px 15px;
+  padding: 20px 70px;
+  .md-block({
+    padding: 20px 50px;
+  });
+  .xs-block({
+    padding: 20px;
+  });
   background-color: @accent;
   cursor: pointer;
   font-family: inherit;
@@ -10,4 +17,10 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+
+  transition: background-color, .5s;
+
+  &:hover, &:active, &:focus {
+    background-color: darken(@accent, 15%);
+  }
 }

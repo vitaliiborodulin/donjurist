@@ -1,7 +1,7 @@
 .debt {
   // min-height: 837px;
-  padding-top: 80px;
-  padding-bottom: 90px;
+  padding-top: 72px;
+  padding-bottom: 63px;
   background: #c1c2c6 url(../img/debt-bg.jpg) no-repeat center center/cover;
 }
 
@@ -9,15 +9,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.debt-text {
-  width: 430px;
+  .md(flex-direction, column);
 }
 
 .debt-title {
-  margin-bottom: 50px;
+  width: 370px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 45px;
+  .md-block({
+    width: 100%;
+    text-align: center;
+    // margin-bottom: 40px;
+  });
   text-align: left;
+}
+
+.debt-text {
+  width: 424px;
+  .md-block({
+    width: 100%;
+    text-align: center;
+  });
 }
 
 .debt-list {
@@ -25,13 +38,18 @@
   font-weight: 700;
 
   li {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 }
 
 .debt-box {
   width: 380px;
   padding: 26px 48px;
+  .md(width, auto);
+  .sm-block({
+    width: 100%;
+    padding: 20px;
+  });
   text-align: center;
   background-color: #fff;
 
@@ -50,13 +68,17 @@
 
   small {
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 46px;
     .font-size(16);
     color: #505050;
   }
 
   &__btn {
+    padding: 20px;
     display: block;
+    .md-block({
+      display: inline-block;
+    });
   }
 }
 

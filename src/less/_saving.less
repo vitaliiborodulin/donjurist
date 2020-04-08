@@ -5,25 +5,31 @@
 }
 
 .saving-title {
-  margin-bottom: 116px;
+  margin-bottom: 107px;
+  .md(margin-bottom, 50px);
   color: #3c3c3c;
 }
 
 .saving-list {
   .row-flex();
-  margin-bottom: 110px;
+  margin-bottom: 57px;
+  .md-block({
+    justify-content: center;
+    margin-bottom: 0;
+  });
 }
 
 .saving-item {
   .col();
   .size(4);
+  .size-md(8);
   .size-sm(12);
 
-  margin-bottom: 12px;
+  margin-bottom: 50px;
   text-align: center;
 
   img {
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
 
   h3 {

@@ -1,30 +1,34 @@
 .strategy {
-  padding-top: 110px;
-  padding-bottom: 112px;
+  padding-top: 102px;
+  padding-bottom: 126px;
   background: #666 url(../img/strategy-bg.jpg) no-repeat center center/cover;
   color: #ffffff;
   text-align: center;
 }
 
 .strategy-title {
-  margin-bottom: 80px;
+  max-width: 800px;
+  margin-bottom: 77px;
 }
 
 .strategy-list {
   .row-flex();
+  .md(justify-content, center);
 }
 
 .strategy-item {
   .col();
   .size(4);
-  .size-sm(12);
+  .size-md(8);
+  .size-xs(12);
 
-  margin-bottom: 12px;
+  margin-bottom: 50px;
   text-align: center;
 
   img {
     min-height: 100px;
-    margin-bottom: 8px;
+    max-width: none;
+    margin-bottom: 18px;
   }
 
   h3 {

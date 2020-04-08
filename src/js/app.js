@@ -1,8 +1,15 @@
 //= ../../node_modules/jquery/dist/jquery.min.js
 
+$(function () {
 
-$(function(){
 
-    console.log(1);
+  //= components/header-link.js
+
+  //= components/burger.js
+
+  //= components/map.js
+
+  //= components/popup.js
+
 
 });

@@ -1,23 +1,36 @@
 .blank {
   // min-height: 837px;
-  padding-top: 80px;
-  padding-bottom: 90px;
-  background: #c1c2c6 url(../img/blank-bg.jpg) no-repeat center center/cover;
+  padding-top: 78px;
+  padding-bottom: 70px;
+  background: #c1c2c6 url(../img/blank-bg.jpg) no-repeat center top/cover;
 }
 
 .blank-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.blank-text {
-  width: 430px;
+  .md(flex-direction, column);
 }
 
 .blank-title {
-  margin-bottom: 50px;
+  width: 390px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 80px;
+  .md-block({
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  });
   text-align: left;
+}
+
+.blank-text {
+  width: 530px;
+  .md-block({
+    width: 100%;
+    text-align: center;
+  });
 }
 
 .blank-list {
@@ -25,19 +38,24 @@
   font-weight: 700;
 
   li {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 }
 
 .blank-box {
   width: 380px;
-  padding: 26px 48px;
+  padding: 20px 54px;
+  .md(width, auto);
+  .sm-block({
+    width: 100%;
+    padding: 20px;
+  });
   text-align: center;
   background-color: #fff;
 
   p {
     .font-size(18);
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     color: #505050;
 
     span {
@@ -50,13 +68,15 @@
 
   small {
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 46px;
     .font-size(16);
     color: #505050;
   }
 
   &__btn {
+    padding: 20px;
     display: block;
+    .md(display, inline-block);
   }
 }
 

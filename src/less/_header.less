@@ -1,6 +1,11 @@
 .header {
+  position: relative;
   padding: 15px 0;
   min-height: 100px;
+  .md-block({
+    min-height: 50px;
+    padding: 5px 0;
+  });
   color: #ffffff;
   background-color: #666362;
 
@@ -12,12 +17,17 @@
 }
 
 .header-logo {
-  width: 258px;
-  height: 70px;
+  width: 250px;
+  height: auto;
+  .md-block({
+    width: 200px;
+  });
 }
 
 .header-menu {
   display: flex;
+  flex-wrap: wrap;
+  .md(display, none);
 
   li {
     position: relative;
@@ -49,11 +59,20 @@
     }
   }
 
+  &--open {
+    display: block!important;
+    position: absolute;
+    bottom: -167px;
+    right: 0;
+    background-color: #666362;
+  }
+
 }
 
 .header-contacts {
   display: flex;
   flex-direction: column;
+  .md(display, none);
   a {
     position: relative;
     margin-left: 9px;

@@ -1,34 +1,42 @@
 .bankrot {
-  padding-top: 99px;
-  padding-bottom: 101px;
+  padding-top: 89px;
+  padding-bottom: 98px;
   text-align: center;
 }
 
 .bankrot-title {
   max-width: 590px;
-  margin-bottom: 84px;
+  margin-bottom: 79px;
 }
 
 .bankrot-list {
-  margin-bottom: 80px;
+  margin-bottom: 59px;
   .row-flex();
+  .md-block({
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+  });
 }
 
 .bankrot-item {
   .col();
   .size(4);
+  .size-md(8);
   .size-sm(12);
 
-  margin-bottom: 12px;
+  margin-bottom: 50px;
 
   img {
     min-height: 100px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 
   h3 {
     .font-size(18);
     .line-height(30);
     font-weight: 700;
+    max-width: 360px;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,61 @@
+.employee {
+  padding-top: 91px;
+  padding-bottom: 50px;
+}
+
+.employee-title {
+  max-width: 510px;
+  margin-bottom: 40px;
+
+  .font-size(30);
+  font-weight: 500;
+  color: #000000;
+
+  span {
+    color: @accent;
+  }
+}
+
+.employee-subtitle {
+  margin: 0 auto;
+  max-width: 360px;
+  text-align: center;
+  .font-size(24);
+  color: #3c3c3c;
+  font-weight: 500;
+  margin-bottom: 78px;
+}
+
+.employee-list {
+  .row-flex();
+justify-content: space-between;
+  // .md(justify-content, center);
+}
+
+.employee-item {
+  .col();
+  .size(4);
+  .size-md(6);
+  .size-xs(12);
+  margin-bottom: 50px;
+  .md(text-align, center);
+
+  img {
+    width: 237px;
+    height: 237px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    .font-size(24);
+    font-weight: 700;
+    color: #000000;
+  }
+
+  &__position {
+    .font-size(18);
+    .line-height(30);
+    font-weight: 500;
+  }
+}

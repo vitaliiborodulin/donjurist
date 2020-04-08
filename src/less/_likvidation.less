@@ -2,22 +2,35 @@
   // min-height: 765px;
   padding-top: 79px;
   padding-bottom: 83px;
-  background: #c1c2c6 url(../img/likvidation-bg.jpg) no-repeat center center/cover;
+  background: #c1c2c6 url(../img/likvidation-bg.jpg) no-repeat center top/cover;
 }
 
 .likvidation-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  .md(flex-direction, column);
+}
+
+.likvidation-title {
+  width: 430px;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 40px;
+  .md-block({
+    width: 100%;
+    text-align: center;
+    // margin-bottom: 40px;
+  });
+  text-align: left;
 }
 
 .likvidation-text {
   width: 430px;
-}
-
-.likvidation-title {
-  margin-bottom: 50px;
-  text-align: left;
+  .md-block({
+    width: 100%;
+    text-align: center;
+  });
 }
 
 .likvidation-list {
@@ -25,13 +38,18 @@
   font-weight: 700;
 
   li {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 }
 
 .likvidation-box {
   width: 380px;
   padding: 26px 48px;
+  .md(width, auto);
+  .sm-block({
+    width: 100%;
+    padding: 20px;
+  });
   text-align: center;
   background-color: #fff;
 
@@ -57,8 +75,13 @@
   }
 
   &__btn {
+    padding: 20px;
     margin-top: 80px;
     display: block;
+    .md-block({
+      display: inline-block;
+      margin-top: 30px;
+    });
   }
 }
 

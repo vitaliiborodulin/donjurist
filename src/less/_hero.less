@@ -1,24 +1,44 @@
 .hero {
   min-height: 800px;
-  padding: 50px 0;
-  background: #c1c2c6 url(../img/hero-bg.jpg) no-repeat center center/cover;
+  padding-top: 200px;
+  .lg(padding-top, 50px);
+  .sm-block({
+    padding-top: 50px;
+    text-align: center;
+  });
+  padding-bottom: 50px;
+  background: #c1c2c6 url(../img/hero-bg.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .lg-block({
+    background-position: 20% 0;
+  })
 }
 
 .hero-content {
-  height: 700px;
+  min-height:550px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  .sm-block({
+    flex-direction: column;
+    align-items: center;
+  });
 }
 
 .hero-text {
-  width: 665px;
+  max-width: 665px;
+  margin-right: 15px;
+  .sm-block({
+    margin-bottom: 50px;
+    margin-right: 0;
+  });
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 
   h1 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-weight: 700;
     .font-size(36);
 
@@ -35,24 +55,30 @@
 }
 
 .hero-form {
-  width: 380px;
+  max-width: 380px;
   padding: 25px 30px 22px;
+  .md-block({
+    padding: 20px 13px;
+  });
+  .sm-block({
+    margin: 0 auto;
+  });
   text-align: center;
   background-color: #ffffff;
 
   &__descr {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     .font-size(18);
     .line-height(36);
     color: #505050;
   }
 
   input {
-    width: 280px;
+    max-width: 280px;
   }
 
   &__input {
-    padding: 20px 30px;
+    padding: 17px 30px;
     margin-bottom: 18px;
     .font-size(18);
     text-align: center;
@@ -61,13 +87,14 @@
   }
 
   &__input[type=tel] {
-    margin-bottom: 25px;
+    margin-bottom: 13px;
   }
 
   &__btn {
     display: block;
     margin: 0 auto;
-    margin-bottom: 22px;
+    padding: 20px 50px;
+    margin-bottom: 15px;
   }
 
   small {
