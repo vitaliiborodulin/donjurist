@@ -4,11 +4,8 @@ $(function () {
 
 
   //= components/header-link.js
-
   //= components/burger.js
-
-  //= components/map.js
-
+  //= components/faq.js
   //= components/popup.js
 
 

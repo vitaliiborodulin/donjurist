@@ -1,3 +1,7 @@
+.contacts {
+  padding-top: 50px;
+}
+
 .contacts__content {
   .row-flex();
   align-items: center;
@@ -18,7 +22,10 @@
   }
 
   & > div > div {
-    .md(text-align, center);
+    .md-block({
+      text-align: center;
+      margin-left: -44px;
+    });
   }
 }
 
@@ -90,7 +97,7 @@
 
 .contacts__btn {
   .md-block( {
-      text-align: center;
+    text-align: center;
     }
 
   )

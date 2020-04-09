@@ -1,0 +1,45 @@
+.action {
+  padding-bottom: 50px;
+
+}
+
+.action-title {
+  margin-bottom: 53px;
+  .sm(margin-bottom, 35px);
+  max-width: 735px;
+  color: #000;
+
+  span {
+    color: @accent
+  }
+}
+
+.action-form {
+  text-align: center;
+
+  small {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    .sm-block({
+      margin-top: 25px;
+      margin-bottom: 35px;
+    });
+    .font-size(18);
+    font-weight: 700;
+    color: @accent;
+  }
+
+  &__input {
+    display: block;
+    width: 570px;
+    margin: 0 auto;
+    .md(width, 90%);
+    padding: 14px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #000;
+    margin-bottom: 27px;
+  }
+}
+
+.action-form__btn {}
